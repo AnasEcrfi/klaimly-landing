@@ -1,7 +1,6 @@
 'use client'
 
 import { useEffect, useRef } from 'react'
-import Link from 'next/link'
 
 export default function Services() {
   const sectionRef = useRef<HTMLElement>(null)

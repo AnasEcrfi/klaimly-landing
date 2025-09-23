@@ -94,7 +94,7 @@ export default function Companies() {
           <div
             ref={scrollRef}
             className="overflow-x-auto scrollbar-hide"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none', WebkitScrollbar: { display: 'none' } }}
+            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' } as React.CSSProperties}
           >
             <div className="flex gap-6">
               {companies.map((company, index) => (

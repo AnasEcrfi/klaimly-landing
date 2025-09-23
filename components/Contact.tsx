@@ -10,7 +10,6 @@ export default function Contact() {
     budget: '',
     message: ''
   })
-  const [buttonHovered, setButtonHovered] = useState(false)
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle')
   const [isBudgetOpen, setIsBudgetOpen] = useState(false)

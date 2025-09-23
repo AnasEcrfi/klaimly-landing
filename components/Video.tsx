@@ -4,7 +4,6 @@ import { useEffect, useRef, useState } from 'react'
 
 export default function Video() {
   const sectionRef = useRef<HTMLDivElement>(null)
-  const [scrollProgress, setScrollProgress] = useState(0)
   const [snappedProgress, setSnappedProgress] = useState(0)
   const lastSnappedRef = useRef(0)
 
@@ -19,7 +18,6 @@ export default function Video() {
       if (rect.top <= 0 && rect.bottom >= windowHeight) {
         const progress = Math.abs(rect.top) / (rect.height - windowHeight)
         const clampedProgress = Math.min(1, Math.max(0, progress))
-        setScrollProgress(clampedProgress)
 
         // Snap points for each word and video
         const snapPoints = [0, 0.188, 0.375, 0.563, 0.75, 1]
@@ -28,7 +26,7 @@ export default function Video() {
         let snapped = clampedProgress
 
         // Find closest snap point
-        for (let snapPoint of snapPoints) {
+        for (const snapPoint of snapPoints) {
           const distance = Math.abs(clampedProgress - snapPoint)
           if (distance < snapThreshold) {
             // Apply magnetic effect - ease towards snap point
@@ -43,11 +41,9 @@ export default function Video() {
         lastSnappedRef.current = smoothed
         setSnappedProgress(smoothed)
       } else if (rect.top > 0) {
-        setScrollProgress(0)
         setSnappedProgress(0)
         lastSnappedRef.current = 0
       } else {
-        setScrollProgress(1)
         setSnappedProgress(1)
         lastSnappedRef.current = 1
       }

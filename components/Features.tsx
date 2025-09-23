@@ -23,11 +23,6 @@ export default function Features() {
     }
   ]
 
-  const images = [
-    "/features-1.jpg",
-    "/features-2.jpg",
-    "/features-3.jpg"
-  ]
 
   useEffect(() => {
     const observer = new IntersectionObserver(

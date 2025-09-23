@@ -38,7 +38,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li><Link href="/#about" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Warum Klaimly</Link></li>
               <li><Link href="/#services" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Leistungen</Link></li>
-              <li><Link href="/#process" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">So funktioniert's</Link></li>
+              <li><Link href="/#process" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">So funktioniert&apos;s</Link></li>
               <li><Link href="/#faq" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">FAQ</Link></li>
             </ul>
           </div>

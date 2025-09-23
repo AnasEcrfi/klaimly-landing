@@ -54,7 +54,7 @@ export default function About() {
                 Warum Klaimly?
               </h2>
               <p className="text-2xl text-[#1a1a1a]/80 font-light leading-relaxed mb-6">
-                „Maximale Förderung. Minimaler Aufwand."
+                &bdquo;Maximale Förderung. Minimaler Aufwand.&ldquo;
               </p>
               <ul className="space-y-3 text-lg text-[#1a1a1a]/70 font-light mb-8">
                 <li className="flex items-center gap-2">
@@ -76,7 +76,7 @@ export default function About() {
                 href="/how-it-works"
                 className="inline-flex items-center gap-3 text-[#1a1a1a] font-medium hover:gap-4 transition-all group"
               >
-                <span className="border-b-2 border-[#1a1a1a] pb-1">So funktioniert's</span>
+                <span className="border-b-2 border-[#1a1a1a] pb-1">So funktioniert&apos;s</span>
                 <svg
                   className="w-5 h-5 transition-transform group-hover:translate-x-1"
                   fill="none"

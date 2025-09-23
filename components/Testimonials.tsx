@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import Image from 'next/image'
 
 export default function Testimonials() {
   const [currentSlide, setCurrentSlide] = useState(0)
@@ -115,7 +114,7 @@ export default function Testimonials() {
                         {testimonial.reviewTitle}
                       </div>
                       <h3 className="text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a]">
-                        "{testimonial.review}"
+                        &ldquo;{testimonial.review}&rdquo;
                       </h3>
                     </div>
 
