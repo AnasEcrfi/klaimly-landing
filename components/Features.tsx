@@ -104,7 +104,7 @@ export default function Features() {
               >
                 <div className="flex items-baseline gap-1 text-5xl font-light mb-2">
                   <span className={`transition-all duration-1000 ${isCounterVisible ? 'opacity-100' : 'opacity-0'}`}>
-                    {isCounterVisible ? '15' : '00'}
+                    {isCounterVisible ? '40' : '00'}
                   </span>
                   <span>+</span>
                 </div>

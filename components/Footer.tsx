@@ -17,26 +17,16 @@ export default function Footer() {
 
             {/* Social Links */}
             <div className="flex gap-4">
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+              <a href="https://instagram.com/klaimly" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073z"/>
                   <path d="M12 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4z"/>
                   <circle cx="18.406" cy="5.594" r="1.44"/>
                 </svg>
               </a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
+              <a href="https://linkedin.com/company/klaimly" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-white transition-colors duration-300">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-              </a>
-              <a href="#" className="text-white/60 hover:text-white transition-colors duration-300">
-                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M22.675 0h1.325c-.399 1.753-2.425 3.577-3.666 4.247-1.12 6.691-5.505 10.753-12.334 10.753-2.689 0-5.228-.613-7.349-1.659.972.109 1.961.167 2.961.167 2.228 0 4.277-.737 5.905-1.969-2.079-.038-3.831-1.412-4.433-3.3.289.056.588.085.897.085.434 0 .854-.058 1.254-.167-2.174-.437-3.812-2.356-3.812-4.658v-.06c.641.355 1.374.568 2.152.594-1.276-.853-2.114-2.31-2.114-3.958 0-.871.234-1.687.644-2.389 2.343 2.875 5.844 4.765 9.792 4.966-.081-.348-.122-.709-.122-1.081 0-2.619 2.123-4.742 4.742-4.742 1.363 0 2.595.576 3.46 1.497 1.079-.212 2.093-.607 3.008-1.15-.354 1.106-1.105 2.035-2.083 2.622.958-.114 1.871-.369 2.72-.745z"/>
                 </svg>
               </a>
             </div>
@@ -46,10 +36,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white/60 text-xs font-medium uppercase tracking-wider mb-6">Entdecken</h4>
             <ul className="space-y-3">
-              <li><Link href="/services" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Services</Link></li>
-              <li><Link href="/work" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Referenzen</Link></li>
-              <li><Link href="/about" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Über uns</Link></li>
-              <li><Link href="/blog" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Blog</Link></li>
+              <li><Link href="/#about" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Warum Klaimly</Link></li>
+              <li><Link href="/#services" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Leistungen</Link></li>
+              <li><Link href="/#process" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">So funktioniert's</Link></li>
+              <li><Link href="/#faq" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">FAQ</Link></li>
             </ul>
           </div>
 
@@ -57,10 +47,10 @@ export default function Footer() {
           <div>
             <h4 className="text-white/60 text-xs font-medium uppercase tracking-wider mb-6">Services</h4>
             <ul className="space-y-3">
-              <li><Link href="/forschungszulage" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Forschungszulage</Link></li>
-              <li><Link href="/foerdermittel" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Fördermittel</Link></li>
-              <li><Link href="/beratung" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Beratung</Link></li>
-              <li><Link href="/dokumentation" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Dokumentation</Link></li>
+              <li><span className="text-white/80 text-sm">Forschungszulage</span></li>
+              <li><span className="text-white/80 text-sm">Fördermittelberatung</span></li>
+              <li><span className="text-white/80 text-sm">Dokumentation</span></li>
+              <li><span className="text-white/80 text-sm">Antragsstellung</span></li>
             </ul>
           </div>
 
@@ -68,10 +58,11 @@ export default function Footer() {
           <div>
             <h4 className="text-white/60 text-xs font-medium uppercase tracking-wider mb-6">Kontakt</h4>
             <ul className="space-y-3">
-              <li><Link href="/contact" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Kontakt</Link></li>
-              <li><a href="mailto:info@klaimly.de" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">info@klaimly.de</a></li>
-              <li><a href="tel:+4930123456" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">+49 30 123456</a></li>
-              <li><span className="text-white/80 text-sm">Berlin, Deutschland</span></li>
+              <li className="text-white text-sm font-medium">Frankfurt am Main</li>
+              <li><span className="text-white/90 text-sm">Taunusanlage 1</span></li>
+              <li><span className="text-white/90 text-sm">60329 Frankfurt</span></li>
+              <li className="pt-2"><a href="mailto:info@klaimly.de" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">info@klaimly.de</a></li>
+              <li><Link href="/#contact" className="text-white/80 hover:text-white transition-colors duration-300 text-sm">Kontaktformular</Link></li>
             </ul>
           </div>
         </div>

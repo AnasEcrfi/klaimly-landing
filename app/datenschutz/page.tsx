@@ -37,11 +37,11 @@ export default function Datenschutz() {
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">1. Verantwortlicher</h2>
               <p>
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br/>
-                KLAIMLY GmbH<br/>
-                [Ihre Adresse]<br/>
-                Berlin, Deutschland<br/>
-                E-Mail: info@klaimly.de<br/>
-                Telefon: +49 30 123456
+                KLAIMLY<br/>
+                Taunusanlage 1<br/>
+                60329 Frankfurt am Main<br/>
+                Deutschland<br/>
+                E-Mail: info@klaimly.de
               </p>
             </section>
 
@@ -182,7 +182,7 @@ export default function Datenschutz() {
             <section className="border-t border-gray-200 pt-8 mt-12">
               <p className="text-sm text-[#999]">
                 Bei Fragen zum Datenschutz wenden Sie sich bitte an:<br/>
-                E-Mail: datenschutz@klaimly.de
+                E-Mail: info@klaimly.de
               </p>
             </section>
           </div>

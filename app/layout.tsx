@@ -4,7 +4,7 @@ import ScrollToTop from "@/components/ScrollToTop";
 
 export const metadata: Metadata = {
   title: "Klaimly - Ihre Forschungszulage. Einfach. Sicher. Digital.",
-  description: "Maximale Förderung für Ihre Forschung und Entwicklung. Bis zu 1 Mio. € jährlich mit professioneller Begleitung.",
+  description: "Maximale Förderung für Ihre Forschung und Entwicklung. Bis zu 3,5 Mio. € jährlich mit professioneller Begleitung.",
 };
 
 export default function RootLayout({

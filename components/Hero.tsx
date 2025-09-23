@@ -73,20 +73,16 @@ export default function Hero() {
 
               {/* First Arrow */}
               <div className="relative w-5 h-5 transition-transform duration-300 group-hover:translate-x-1">
-                <img
-                  src="https://cdn.prod.website-files.com/67d0d63722d4148ddf756839/67d0dd88bfd50e123999832d_Button%20Icon.svg"
-                  alt=""
-                  className="w-full h-full"
-                />
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
 
               {/* Second Arrow (Hidden, Slides In) */}
               <div className="absolute right-8 w-5 h-5 opacity-0 -translate-x-10 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
-                <img
-                  src="https://cdn.prod.website-files.com/67d0d63722d4148ddf756839/67d0dd88bfd50e123999832d_Button%20Icon.svg"
-                  alt=""
-                  className="w-full h-full"
-                />
+                <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                </svg>
               </div>
             </a>
           </div>

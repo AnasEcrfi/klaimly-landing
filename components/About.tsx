@@ -58,7 +58,7 @@ export default function About() {
               </p>
               <ul className="space-y-3 text-lg text-[#1a1a1a]/70 font-light mb-8">
                 <li className="flex items-center gap-2">
-                  <span className="text-[#7A866C]">•</span> Bis zu 1 Mio. € jährlich
+                  <span className="text-[#7A866C]">•</span> Bis zu 3,5 Mio. € jährlich
                 </li>
                 <li className="flex items-center gap-2">
                   <span className="text-[#7A866C]">•</span> 100 % digitaler Prozess
@@ -121,7 +121,7 @@ export default function About() {
                     Maximale Förderung
                   </h3>
                   <p className="text-sm text-[#1a1a1a]/60 font-light leading-relaxed">
-                    Bis zu 1 Million Euro jährliche Erstattung für Ihre F&E-Projekte
+                    Bis zu 3,5 Millionen Euro jährliche Erstattung für Ihre F&E-Projekte
                   </p>
                 </div>
               </div>

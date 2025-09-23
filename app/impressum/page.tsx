@@ -34,25 +34,40 @@ export default function Impressum() {
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4">Angaben gemäß § 5 TMG</h2>
               <p>
-                <strong className="text-[#1a1a1a]">KLAIMLY GmbH</strong><br/>
-                Ihr Partner für Forschungszulage<br/>
-                Musterstraße 123<br/>
-                10115 Berlin<br/>
-                Deutschland
+                <strong className="text-[#1a1a1a] text-xl">KLAIMLY</strong><br/>
+                <span className="text-[#333] font-medium">Forschungszulage & Fördermittelberatung</span><br/>
+                <span className="text-sm text-[#666]">Ihr Partner für maximale Förderung</span>
               </p>
+
+              <div className="mt-6">
+                <p className="font-semibold text-[#1a1a1a] text-lg mb-2">Postanschrift Deutschland:</p>
+                <p className="text-[#333] leading-relaxed">
+                  <strong>Postfach: Taunusanlage 1</strong><br/>
+                  <strong>60329 Frankfurt am Main</strong><br/>
+                  <strong>Deutschland</strong>
+                </p>
+              </div>
+
+              <div className="mt-6 pt-4 border-t border-gray-200">
+                <p className="text-[10px] text-[#bbb] mb-1 italic">Rechtliche Registrierung:</p>
+                <p className="text-[10px] text-[#bbb] leading-relaxed italic">
+                  SwiftStock FZ-LLC, Compass Building<br/>
+                  RAK Economic Zone, UAE | Lizenz: 5029954
+                </p>
+              </div>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Vertreten durch</h2>
               <p>
-                Geschäftsführer: [Name des Geschäftsführers]<br/>
+                Die Geschäftsführung<br/>
+                KLAIMLY<br/>
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Kontakt</h2>
               <p>
-                Telefon: +49 (0) 30 123456<br/>
                 E-Mail: info@klaimly.de<br/>
                 Website: www.klaimly.de
               </p>
@@ -61,36 +76,37 @@ export default function Impressum() {
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Registereintrag</h2>
               <p>
-                Eintragung im Handelsregister<br/>
-                Registergericht: Amtsgericht Berlin-Charlottenburg<br/>
-                Registernummer: HRB 123456 B
+                Gesellschaftsform: Free Zone Limited Liability Company (FZ-LLC)<br/>
+                Registriert bei: Ras Al Khaimah Economic Zone Authority (RAKEZ)<br/>
+                Lizenznummer: 5029954<br/>
+                Ausstellungsdatum: 15.08.2024<br/>
+                Gültig bis: 14.08.2026
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Umsatzsteuer-ID</h2>
               <p>
-                Umsatzsteuer-Identifikationsnummer gemäß § 27a Umsatzsteuergesetz:<br/>
-                DE123456789
+                Umsatzsteuer-Identifikationsnummer für Geschäfte in Deutschland:<br/>
+                In Bearbeitung
               </p>
             </section>
 
             <section>
-              <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Berufsbezeichnung und berufsrechtliche Regelungen</h2>
+              <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Geschäftstätigkeit</h2>
               <p>
-                Berufsbezeichnung: Unternehmensberater<br/>
-                Zuständige Kammer: Industrie- und Handelskammer Berlin<br/>
-                Verliehen in: Deutschland
+                Tätigkeit: Commercial Brokers / Handelsvertretung<br/>
+                Spezialisierung: Beratung und Vermittlung von Forschungszulagen<br/>
+                Tätigkeitsgebiet: Deutschland und EU
               </p>
             </section>
 
             <section>
               <h2 className="text-2xl font-light text-[#1a1a1a] mb-4 mt-8">Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV</h2>
               <p>
-                [Name des Verantwortlichen]<br/>
-                KLAIMLY GmbH<br/>
-                Musterstraße 123<br/>
-                10115 Berlin<br/>
+                KLAIMLY<br/>
+                Taunusanlage 1<br/>
+                60329 Frankfurt am Main<br/>
                 Deutschland
               </p>
             </section>
@@ -170,7 +186,8 @@ export default function Impressum() {
               <p>
                 In Kooperation mit:<br/>
                 <strong className="text-[#1a1a1a]">GEWI GmbH & Co. KG</strong><br/>
-                [Adresse des Partners]
+                Niedenstr. 13<br/>
+                40721 Hilden<br/>
               </p>
             </section>
 

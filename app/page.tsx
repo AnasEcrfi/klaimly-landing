@@ -8,6 +8,7 @@ import ServicesTab from '@/components/ServicesTab'
 import Testimonials from '@/components/Testimonials'
 import FAQ from '@/components/FAQ'
 import Companies from '@/components/Companies'
+import CallbackRequest from '@/components/CallbackRequest'
 import Contact from '@/components/Contact'
 import Footer from '@/components/Footer'
 
@@ -22,6 +23,7 @@ export default function Home() {
       <Services />
       <ServicesTab />
       <Testimonials />
+      <CallbackRequest />
       <FAQ />
       <Companies />
       <Contact />
