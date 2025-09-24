@@ -35,13 +35,6 @@ export const metadata: Metadata = {
     locale: "de_DE",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Klaimly - Ihre Forschungszulage digital beantragen",
-    description: "Bis zu 3,5 Mio. € Förderung für Ihre F&E-Projekte. 100% digital mit professioneller Begleitung.",
-    images: ["/og-image.png"],
-    creator: "@klaimly",
-  },
   robots: {
     index: true,
     follow: true,
