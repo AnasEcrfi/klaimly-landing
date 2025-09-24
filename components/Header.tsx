@@ -40,8 +40,10 @@ export default function Header() {
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         isScrolled ? 'bg-white/95' : 'bg-transparent'
       } backdrop-blur-sm`}
+      role="banner"
+      aria-label="Hauptnavigation"
     >
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-[74px]">
+      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex items-center justify-between h-16 sm:h-[74px]" role="navigation" aria-label="Hauptmenü">
         {/* Brand Name */}
         <Link href="/" className={`text-lg sm:text-xl lg:text-2xl font-bold tracking-wider transition-all duration-300 ${
           isScrolled ? 'text-[#1a1a1a]' : 'text-white'

@@ -20,9 +20,9 @@ export default function Hero() {
   }, [])
 
   return (
-    <section className="relative min-h-screen overflow-hidden">
+    <section className="relative min-h-screen overflow-hidden" role="main" aria-label="Hero Bereich mit Einführungsvideo">
       {/* Hero Background Video with Parallax */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0" aria-hidden="true">
         <video
           ref={heroVideoRef}
           autoPlay
