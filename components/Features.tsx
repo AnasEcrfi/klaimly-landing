@@ -67,8 +67,9 @@ export default function Features() {
               <span className="text-xs font-medium text-[#666] uppercase tracking-wider">In Kooperation mit</span>
               <img
                 src="/GEWI_Logo_rgb.png.webp"
-                alt="GEWI Partner"
+                alt="GEWI - Gesellschaft für Wirtschaftsförderung und Innovationsberatung Partner"
                 className="h-8 sm:h-10 w-auto hover:scale-105 transition-transform duration-300"
+                loading="lazy"
               />
             </div>
           </div>

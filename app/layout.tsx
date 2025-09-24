@@ -130,9 +130,12 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
         <meta name="theme-color" content="#7A866C" />
+      </head>
+      <body className="antialiased">
         <Script
           id="json-ld-organization"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdOrganization),
           }}
@@ -140,12 +143,11 @@ export default function RootLayout({
         <Script
           id="json-ld-service"
           type="application/ld+json"
+          strategy="afterInteractive"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdService),
           }}
         />
-      </head>
-      <body className="antialiased">
         {children}
         <ScrollToTop />
       </body>

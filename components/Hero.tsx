@@ -29,12 +29,15 @@ export default function Hero() {
           muted
           loop
           playsInline
+          preload="metadata"
+          poster="/klaimly_hero_1.jpg"
           className="w-full h-full object-cover absolute inset-0 scale-110 blur-sm"
           style={{
             willChange: 'transform',
             transform: 'translate3d(0px, -20px, 0px) scale3d(1.1, 1.1, 1)',
             filter: 'blur(4px)',
           }}
+          aria-label="Hintergrundvideo - Forschung und Innovation"
         >
           <source src="/klaimly_video.m4v" type="video/mp4" />
           <source src="/klaimly_video.mp4" type="video/mp4" />

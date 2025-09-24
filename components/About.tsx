@@ -39,8 +39,9 @@ export default function About() {
             <div className="relative aspect-[550/750] w-full overflow-hidden rounded-[2rem]">
               <img
                 src="/klaimly_hero_1.jpg"
-                alt="Klaimly - Warum Klaimly"
+                alt="Klaimly Team - Professionelle Forschungszulage Beratung"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>

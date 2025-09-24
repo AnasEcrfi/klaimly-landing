@@ -12,8 +12,9 @@ export default function Partners() {
             <div className="relative group cursor-pointer">
               <img
                 src="/GEWI_Logo_rgb.png.webp"
-                alt="GEWI Partner"
+                alt="GEWI - Gesellschaft für Wirtschaftsförderung und Innovationsberatung - Kooperationspartner"
                 className="h-16 md:h-20 w-auto opacity-70 group-hover:opacity-100 transition-all duration-300 transform group-hover:scale-105"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-r from-[#7A866C]/0 via-[#7A866C]/5 to-[#7A866C]/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
             </div>

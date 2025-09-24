@@ -123,8 +123,9 @@ export default function Testimonials() {
                       {/* Full Background Image */}
                       <img
                         src={testimonial.image}
-                        alt={testimonial.name}
+                        alt={`${testimonial.name} - ${testimonial.role} - Kundenbewertung für Klaimly`}
                         className="absolute inset-0 w-full h-full object-cover"
+                        loading="lazy"
                       />
                     </div>
                   </div>
