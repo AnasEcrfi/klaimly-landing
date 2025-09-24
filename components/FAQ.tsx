@@ -41,53 +41,53 @@ export default function FAQ() {
   }
 
   return (
-    <section id="faq" className="py-20 md:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+    <section id="faq" className="py-16 sm:py-20 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
 
           {/* Left Column - Header & Image */}
           <div>
-            <div className="mb-12">
-              <div className="inline-block px-3 py-1.5 bg-[#f8f8f8] rounded-full mb-6">
+            <div className="mb-8 sm:mb-12">
+              <div className="inline-block px-3 py-1.5 bg-[#f8f8f8] rounded-full mb-4 sm:mb-6">
                 <span className="text-xs font-medium text-[#666] uppercase tracking-wider">FAQ</span>
               </div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-6 sm:mb-8">
                 Alles was Sie wissen müssen
               </h2>
-              <p className="text-lg text-[#666]">
+              <p className="text-base sm:text-lg text-[#666]">
                 Schnelle Antworten zu den wichtigsten Fragen rund um die Forschungszulage
               </p>
             </div>
 
             {/* Image */}
-            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#fafafa] h-[400px] flex items-center justify-center">
-              <div className="text-center px-8">
-                <svg className="w-32 h-32 mx-auto text-[#7A866C]/30 mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="rounded-2xl overflow-hidden bg-gradient-to-br from-[#f5f5f5] to-[#fafafa] h-[300px] sm:h-[400px] flex items-center justify-center">
+              <div className="text-center px-4 sm:px-8">
+                <svg className="w-24 h-24 sm:w-32 sm:h-32 mx-auto text-[#7A866C]/30 mb-4 sm:mb-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                <h3 className="text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-3">Haben Sie Fragen?</h3>
-                <p className="text-[#666]">Unser Team ist für Sie da</p>
+                <h3 className="text-xl sm:text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-3">Haben Sie Fragen?</h3>
+                <p className="text-sm sm:text-base text-[#666]">Unser Team ist für Sie da</p>
               </div>
             </div>
           </div>
 
           {/* Right Column - FAQ Accordion */}
-          <div className="space-y-4">
+          <div className="space-y-3 sm:space-y-4">
             {faqs.map((faq, index) => (
               <div
                 key={index}
-                className="border-b border-[#e5e5e5] pb-4"
+                className="border-b border-[#e5e5e5] pb-3 sm:pb-4"
               >
                 <button
                   onClick={() => toggleFaq(index)}
-                  className="w-full flex items-center justify-between py-4 text-left transition-colors duration-300 group"
+                  className="w-full flex items-center justify-between py-3 sm:py-4 text-left transition-colors duration-300 group"
                 >
-                  <h3 className="text-lg md:text-xl font-light leading-[1.3] text-[#1a1a1a] pr-8 group-hover:text-[#1a1a1a]/80">
+                  <h3 className="text-base sm:text-lg md:text-xl font-light leading-[1.3] text-[#1a1a1a] pr-6 sm:pr-8 group-hover:text-[#1a1a1a]/80">
                     {faq.question}
                   </h3>
                   <div className="flex-shrink-0">
                     <svg
-                      className={`w-5 h-5 text-[#666] transition-transform duration-500 ease-in-out ${
+                      className={`w-4 h-4 sm:w-5 sm:h-5 text-[#666] transition-transform duration-500 ease-in-out ${
                         openIndex === index ? 'rotate-45' : 'rotate-0'
                       }`}
                       fill="none"
@@ -101,10 +101,10 @@ export default function FAQ() {
 
                 <div
                   className={`overflow-hidden transition-all duration-500 ease-in-out ${
-                    openIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                    openIndex === index ? 'max-h-80 sm:max-h-96 opacity-100' : 'max-h-0 opacity-0'
                   }`}
                 >
-                  <p className="text-[#666] pb-4 pr-12 pt-2 transition-all duration-300">
+                  <p className="text-sm sm:text-base text-[#666] pb-3 sm:pb-4 pr-8 sm:pr-12 pt-2 transition-all duration-300">
                     {faq.answer}
                   </p>
                 </div>

@@ -40,9 +40,9 @@ export default function Impressum() {
               </p>
 
               <div className="mt-6">
-                <p className="font-semibold text-[#1a1a1a] text-lg mb-2">Postanschrift Deutschland:</p>
+                <p className="font-semibold text-[#1a1a1a] text-lg mb-2">Postanschrift:</p>
                 <p className="text-[#333] leading-relaxed">
-                  <strong>Postfach: Taunusanlage 1</strong><br/>
+                  <strong>Taunusanlage 1</strong><br/>
                   <strong>60329 Frankfurt am Main</strong><br/>
                   <strong>Deutschland</strong>
                 </p>

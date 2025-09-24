@@ -44,18 +44,18 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-8 min-h-screen flex items-center">
-        <div className="max-w-2xl pt-48 pb-20 -ml-[3%]">
+      <div className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 min-h-screen flex items-center">
+        <div className="max-w-2xl pt-32 sm:pt-40 md:pt-48 pb-16 sm:pb-20 lg:-ml-[3%]">
           {/* Animated Heading */}
           <div className="animate-fade-in-up animation-delay-100">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-light leading-[1.1] tracking-tight mb-8" style={{ color: 'white' }}>
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-light leading-[1.1] tracking-tight mb-6 sm:mb-8" style={{ color: 'white' }}>
               Forschung verdient Förderung.
             </h1>
           </div>
 
           {/* Animated Paragraph */}
           <div className="animate-fade-in-up animation-delay-200">
-            <p className="text-lg md:text-xl text-white/80 max-w-xl mb-12 font-light leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/80 max-w-xl mb-8 sm:mb-10 md:mb-12 font-light leading-relaxed">
               Wir holen Ihre Forschungszulage.
               <br />
               Einfach. Sicher. Digital.
@@ -66,7 +66,7 @@ export default function Hero() {
           <div className="animate-fade-in-up animation-delay-300">
             <a
               href="#contact"
-              className="group relative inline-flex items-center gap-3 bg-white text-[#1a1a1a] px-8 py-4 rounded-full font-medium transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden"
+              className="group relative inline-flex items-center gap-2 sm:gap-3 bg-white text-[#1a1a1a] px-6 sm:px-8 py-3 sm:py-4 rounded-full text-sm sm:text-base font-medium transition-all duration-300 hover:shadow-xl hover:scale-105 overflow-hidden"
             >
               <span className="relative z-10">Jetzt Beratung vereinbaren</span>
 
@@ -78,7 +78,7 @@ export default function Hero() {
               </div>
 
               {/* Second Arrow (Hidden, Slides In) */}
-              <div className="absolute right-8 w-5 h-5 opacity-0 -translate-x-10 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
+              <div className="absolute right-6 sm:right-8 w-5 h-5 opacity-0 -translate-x-10 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-0">
                 <svg className="w-full h-full" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                 </svg>

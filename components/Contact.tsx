@@ -106,26 +106,26 @@ export default function Contact() {
         </div>
       )}
 
-      <section id="contact" className="py-20 md:py-28 bg-gradient-to-b from-white to-[#faf8f5]">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
+      <section id="contact" className="py-16 sm:py-20 md:py-28 bg-gradient-to-b from-white to-[#faf8f5]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16">
 
           {/* Left Side - Intro */}
           <div>
-            <div className="mb-12">
+            <div className="mb-8 sm:mb-12">
               <span className="text-xs font-medium text-[#7A866C] uppercase tracking-wider">Kontakt</span>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-[1.1] mt-4 mb-6">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light text-[#1a1a1a] leading-[1.1] mt-4 mb-6">
                 Lassen Sie uns über Ihre <span className="text-[#7A866C]">Förderung</span> sprechen
               </h2>
-              <p className="text-lg text-[#666] leading-relaxed">
+              <p className="text-base sm:text-lg text-[#666] leading-relaxed">
                 Vereinbaren Sie ein unverbindliches Erstgespräch und erfahren Sie,
                 wie viel Forschungszulage Ihrem Unternehmen zusteht.
               </p>
             </div>
 
             {/* Contact Info Cards */}
-            <div className="space-y-4">
-              <div className="bg-white rounded-2xl p-6 shadow-sm">
+            <div className="space-y-3 sm:space-y-4">
+              <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#7A866C]/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-[#7A866C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,8 +133,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-[#666] mb-1">E-Mail</p>
-                    <a href="mailto:info@klaimly.de" className="text-lg font-medium text-[#1a1a1a] hover:text-[#7A866C] transition-colors">
+                    <p className="text-xs sm:text-sm text-[#666] mb-1">E-Mail</p>
+                    <a href="mailto:info@klaimly.de" className="text-base sm:text-lg font-medium text-[#1a1a1a] hover:text-[#7A866C] transition-colors">
                       info@klaimly.de
                     </a>
                   </div>
@@ -142,7 +142,7 @@ export default function Contact() {
               </div>
 
 
-              <div className="bg-white rounded-2xl p-6 shadow-sm">
+              <div className="bg-white rounded-2xl p-4 sm:p-6 shadow-sm">
                 <div className="flex items-start gap-4">
                   <div className="w-12 h-12 bg-[#7A866C]/10 rounded-full flex items-center justify-center flex-shrink-0">
                     <svg className="w-5 h-5 text-[#7A866C]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -150,8 +150,8 @@ export default function Contact() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-sm text-[#666] mb-1">Beratung</p>
-                    <p className="text-lg font-medium text-[#1a1a1a]">Persönliche Betreuung</p>
+                    <p className="text-xs sm:text-sm text-[#666] mb-1">Beratung</p>
+                    <p className="text-base sm:text-lg font-medium text-[#1a1a1a]">Persönliche Betreuung</p>
                   </div>
                 </div>
               </div>
@@ -159,8 +159,8 @@ export default function Contact() {
           </div>
 
           {/* Right Side - Contact Form */}
-          <div className="bg-white rounded-3xl p-8 md:p-10 shadow-lg relative">
-            <form onSubmit={handleSubmit} className="space-y-6">
+          <div className="bg-white rounded-3xl p-6 sm:p-8 md:p-10 shadow-lg relative">
+            <form onSubmit={handleSubmit} className="space-y-5 sm:space-y-6">
               {/* Name Field */}
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-[#1a1a1a] mb-2">
@@ -173,7 +173,7 @@ export default function Contact() {
                   required
                   value={formData.name}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent"
+                  className="w-full px-0 py-2 sm:py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent text-sm sm:text-base"
                   placeholder="Ihr vollständiger Name"
                 />
               </div>
@@ -190,7 +190,7 @@ export default function Contact() {
                   required
                   value={formData.email}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent"
+                  className="w-full px-0 py-2 sm:py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent text-sm sm:text-base"
                   placeholder="ihre.email@beispiel.de"
                 />
               </div>
@@ -206,7 +206,7 @@ export default function Contact() {
                   name="company"
                   value={formData.company}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent"
+                  className="w-full px-0 py-2 sm:py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent text-sm sm:text-base"
                   placeholder="Ihr Unternehmen (optional)"
                 />
               </div>
@@ -220,7 +220,7 @@ export default function Contact() {
                   <button
                     type="button"
                     onClick={() => setIsBudgetOpen(!isBudgetOpen)}
-                    className="w-full px-0 py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent text-left flex items-center justify-between"
+                    className="w-full px-0 py-2 sm:py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent text-left flex items-center justify-between text-sm sm:text-base"
                   >
                     <span className={formData.budget ? 'text-[#1a1a1a]' : 'text-[#666]'}>
                       {formData.budget || 'Bitte wählen'}
@@ -251,7 +251,7 @@ export default function Contact() {
                             setFormData({ ...formData, budget: option })
                             setIsBudgetOpen(false)
                           }}
-                          className="w-full px-4 py-3 text-left hover:bg-[#7A866C]/5 transition-colors text-[#1a1a1a]"
+                          className="w-full px-3 sm:px-4 py-2 sm:py-3 text-left hover:bg-[#7A866C]/5 transition-colors text-[#1a1a1a] text-sm sm:text-base"
                         >
                           {option}
                         </button>
@@ -273,17 +273,17 @@ export default function Contact() {
                   rows={4}
                   value={formData.message}
                   onChange={handleChange}
-                  className="w-full px-0 py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent resize-none"
+                  className="w-full px-0 py-2 sm:py-3 border-0 border-b border-[#e5e5e5] focus:border-[#7A866C] outline-none transition-colors bg-transparent resize-none text-sm sm:text-base"
                   placeholder="Erzählen Sie uns von Ihrem Projekt..."
                 />
               </div>
 
               {/* Submit Button */}
-              <div className="pt-6">
+              <div className="pt-4 sm:pt-6">
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full bg-gradient-to-r from-[#7A866C] to-[#869271] text-white px-8 py-4 rounded-full font-medium transition-all duration-300 hover:shadow-xl hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="w-full bg-gradient-to-r from-[#7A866C] to-[#869271] text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-medium transition-all duration-300 hover:shadow-xl hover:scale-[1.02] disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
                 >
                   {isSubmitting ? 'Wird gesendet...' : 'Förderung anfragen'}
                 </button>
@@ -294,7 +294,7 @@ export default function Contact() {
             {/* Success Message - Contained within form */}
             {submitStatus === 'success' && (
               <div className="absolute inset-0 bg-white/95 backdrop-blur-sm flex items-center justify-center z-40 rounded-3xl animate-fade-in">
-                <div className="p-8 md:p-12 max-w-md w-full animate-scale-up">
+                <div className="p-6 sm:p-8 md:p-12 max-w-md w-full animate-scale-up">
                   {/* Success Icon */}
                   <div className="w-20 h-20 bg-gradient-to-br from-[#7A866C] to-[#93A084] rounded-full mx-auto mb-6 flex items-center justify-center animate-check-mark">
                     <svg
@@ -314,17 +314,17 @@ export default function Contact() {
                   </div>
 
                   {/* Success Message */}
-                  <h3 className="text-2xl md:text-3xl font-light text-[#1a1a1a] text-center mb-4">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-light text-[#1a1a1a] text-center mb-4">
                     Vielen Dank für Ihre Anfrage!
                   </h3>
-                  <p className="text-[#666] text-center mb-8 leading-relaxed">
+                  <p className="text-sm sm:text-base text-[#666] text-center mb-6 sm:mb-8 leading-relaxed">
                     Wir haben Ihre Nachricht erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.
                   </p>
 
                   {/* Close Button */}
                   <button
                     onClick={() => setSubmitStatus('idle')}
-                    className="w-full bg-gradient-to-r from-[#7A866C] to-[#869271] text-white px-6 py-3 rounded-full font-medium hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+                    className="w-full bg-gradient-to-r from-[#7A866C] to-[#869271] text-white px-5 sm:px-6 py-2.5 sm:py-3 rounded-full font-medium hover:shadow-xl transition-all duration-300 hover:scale-[1.02] text-sm sm:text-base"
                   >
                     Schließen
                   </button>

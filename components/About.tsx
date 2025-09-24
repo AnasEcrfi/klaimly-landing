@@ -30,9 +30,9 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" ref={sectionRef} className="py-20 md:py-28 bg-white">
-      <div className="max-w-7xl mx-auto px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+    <section id="about" ref={sectionRef} className="py-16 sm:py-20 md:py-28 bg-white">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
 
           {/* Left Column - Image */}
           <div className="fade-up opacity-0 transition-all duration-700">
@@ -50,13 +50,13 @@ export default function About() {
 
             {/* Title and Description */}
             <div className="fade-up opacity-0 transition-all duration-700 delay-100">
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-8">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-6 sm:mb-8">
                 Warum Klaimly?
               </h2>
-              <p className="text-2xl text-[#1a1a1a]/80 font-light leading-relaxed mb-6">
+              <p className="text-xl sm:text-2xl text-[#1a1a1a]/80 font-light leading-relaxed mb-4 sm:mb-6">
                 &bdquo;Maximale Förderung. Minimaler Aufwand.&ldquo;
               </p>
-              <ul className="space-y-3 text-lg text-[#1a1a1a]/70 font-light mb-8">
+              <ul className="space-y-2 sm:space-y-3 text-base sm:text-lg text-[#1a1a1a]/70 font-light mb-6 sm:mb-8">
                 <li className="flex items-center gap-2">
                   <span className="text-[#7A866C]">•</span> Bis zu 3,5 Mio. € jährlich
                 </li>
@@ -74,7 +74,7 @@ export default function About() {
               {/* CTA Button */}
               <Link
                 href="/how-it-works"
-                className="inline-flex items-center gap-3 text-[#1a1a1a] font-medium hover:gap-4 transition-all group"
+                className="inline-flex items-center gap-2 sm:gap-3 text-[#1a1a1a] text-sm sm:text-base font-medium hover:gap-3 sm:hover:gap-4 transition-all group"
               >
                 <span className="border-b-2 border-[#1a1a1a] pb-1">So funktioniert&apos;s</span>
                 <svg
@@ -94,14 +94,14 @@ export default function About() {
             </div>
 
             {/* Feature Cards */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
 
               {/* Card 01 */}
               <div className="fade-up opacity-0 transition-all duration-700 delay-200 group">
-                <div className="bg-gradient-to-br from-[#7A866C]/10 via-[#869271]/8 to-[#93A084]/10 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-[#7A866C]/10 hover:border-[#7A866C]/20">
-                  <div className="flex items-start justify-between mb-6">
-                    <span className="text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-[#7A866C] to-[#93A084]">01</span>
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-white to-[#7A866C]/5 shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-[#7A866C]/10 via-[#869271]/8 to-[#93A084]/10 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300 border border-[#7A866C]/10 hover:border-[#7A866C]/20">
+                  <div className="flex items-start justify-between mb-4 sm:mb-6">
+                    <span className="text-4xl sm:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-[#7A866C] to-[#93A084]">01</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-white to-[#7A866C]/5 shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <svg
                         className="w-5 h-5 text-[#1a1a1a]/60"
                         fill="none"
@@ -117,7 +117,7 @@ export default function About() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-3">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-2 sm:mb-3">
                     Maximale Förderung
                   </h3>
                   <p className="text-sm text-[#1a1a1a]/60 font-light leading-relaxed">
@@ -128,10 +128,10 @@ export default function About() {
 
               {/* Card 02 */}
               <div className="fade-up opacity-0 transition-all duration-700 delay-300 group">
-                <div className="bg-gradient-to-br from-[#7A866C]/10 via-[#869271]/8 to-[#93A084]/10 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 border border-[#7A866C]/10 hover:border-[#7A866C]/20">
-                  <div className="flex items-start justify-between mb-6">
-                    <span className="text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-[#7A866C] to-[#93A084]">02</span>
-                    <div className="w-10 h-10 rounded-full bg-gradient-to-br from-white to-[#7A866C]/5 shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
+                <div className="bg-gradient-to-br from-[#7A866C]/10 via-[#869271]/8 to-[#93A084]/10 rounded-2xl p-6 sm:p-8 hover:shadow-xl transition-all duration-300 border border-[#7A866C]/10 hover:border-[#7A866C]/20">
+                  <div className="flex items-start justify-between mb-4 sm:mb-6">
+                    <span className="text-4xl sm:text-5xl font-light text-transparent bg-clip-text bg-gradient-to-r from-[#7A866C] to-[#93A084]">02</span>
+                    <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-gradient-to-br from-white to-[#7A866C]/5 shadow-lg flex items-center justify-center transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1">
                       <svg
                         className="w-5 h-5 text-[#1a1a1a]/60"
                         fill="none"
@@ -147,7 +147,7 @@ export default function About() {
                       </svg>
                     </div>
                   </div>
-                  <h3 className="text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-3">
+                  <h3 className="text-xl sm:text-2xl md:text-3xl font-light leading-[1.2] text-[#1a1a1a] mb-2 sm:mb-3">
                     100% Digital
                   </h3>
                   <p className="text-sm text-[#1a1a1a]/60 font-light leading-relaxed">

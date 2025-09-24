@@ -51,13 +51,13 @@ export default function Services() {
   ]
 
   return (
-    <section id="services" ref={sectionRef} className="section_home1_services py-20 md:py-28 bg-white">
+    <section id="services" ref={sectionRef} className="section_home1_services py-16 sm:py-20 md:py-28 bg-white">
       <div className="padding-global">
-        <div className="container-default max-w-7xl mx-auto px-8">
+        <div className="container-default max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           {/* Section Header */}
           <div
-            className="section-header fade-up opacity-0 transition-all duration-700 flex flex-col lg:flex-row justify-between items-start lg:items-center mb-12 gap-8"
+            className="section-header fade-up opacity-0 transition-all duration-700 flex flex-col lg:flex-row justify-between items-start lg:items-center mb-8 sm:mb-12 gap-6 sm:gap-8"
             data-w-id="4528315b-24e9-cd4d-a983-e28017084d61"
           >
             <div className="section-header-content">
@@ -65,7 +65,7 @@ export default function Services() {
                 <span className="text-xs font-medium text-[#666] uppercase tracking-wider">Services</span>
               </div>
               <div className="spacer-xsmall h-2"></div>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a]">
+              <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a]">
                 Klaimly: Ihr Partner von der ersten Idee bis zur letzten Abrechnung
               </h2>
             </div>
@@ -80,9 +80,9 @@ export default function Services() {
             <div className="flex flex-col lg:flex-row">
 
               {/* Left: Highlight Box */}
-              <div className="home1_services_highlight lg:w-[35%] bg-gradient-to-br from-[#7A866C] via-[#6F7B62] to-[#647055] p-8 lg:p-12 flex items-center shadow-inner">
+              <div className="home1_services_highlight lg:w-[35%] bg-gradient-to-br from-[#7A866C] via-[#6F7B62] to-[#647055] p-6 sm:p-8 lg:p-12 flex items-center shadow-inner">
                 <div className="heading-style-h5 text-color-alternate">
-                  <h3 className="text-3xl md:text-4xl lg:text-5xl font-light leading-[1.1]" style={{ color: 'white' }}>
+                  <h3 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-light leading-[1.1]" style={{ color: 'white' }}>
                     Förderung.
                     <br />
                     Neu gedacht.
@@ -92,11 +92,11 @@ export default function Services() {
 
               {/* Right: Services Grid */}
               <div className="lg:w-[65%] bg-[#f9f9f9]">
-                <div className="home1_services_grid grid grid-cols-1 md:grid-cols-2 gap-0">
+                <div className="home1_services_grid grid grid-cols-1 sm:grid-cols-2 gap-0">
                   {services.map((service, index) => (
                     <div
                       key={index}
-                      className="home1_services_card group relative bg-white border-r border-b border-[#f0f0f0] last:border-r-0 md:even:border-r-0 md:last:border-b-0 md:[&:nth-child(3)]:border-b-0 hover:shadow-xl hover:z-10 transition-all duration-300 cursor-pointer"
+                      className="home1_services_card group relative bg-white border-r border-b border-[#f0f0f0] last:border-r-0 sm:even:border-r-0 sm:last:border-b-0 sm:[&:nth-child(3)]:border-b-0 hover:shadow-xl hover:z-10 transition-all duration-300 cursor-pointer"
                     >
                       {/* Service Image */}
                       <div className="aspect-[3/2] bg-gradient-to-br from-[#fafafa] to-[#f5f5f5] relative overflow-hidden">
@@ -165,11 +165,11 @@ export default function Services() {
                       </div>
 
                       {/* Service Content */}
-                      <div className="home1_services_content p-4 lg:p-5">
-                        <div className="text-base lg:text-lg font-medium text-[#1a1a1a] mb-1">
+                      <div className="home1_services_content p-4 sm:p-5">
+                        <div className="text-sm sm:text-base lg:text-lg font-medium text-[#1a1a1a] mb-1">
                           {service.title}
                         </div>
-                        <div className="text-color-secondary text-xs lg:text-sm text-[#666]">
+                        <div className="text-color-secondary text-xs sm:text-sm text-[#666]">
                           {service.description}
                         </div>
                       </div>

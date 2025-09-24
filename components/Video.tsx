@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react'
 
 export default function Video() {
   const sectionRef = useRef<HTMLDivElement>(null)
+  const [scrollProgress, setScrollProgress] = useState(0)
   const [snappedProgress, setSnappedProgress] = useState(0)
   const lastSnappedRef = useRef(0)
 
@@ -14,10 +15,20 @@ export default function Video() {
       const rect = sectionRef.current.getBoundingClientRect()
       const windowHeight = window.innerHeight
 
+      // Debug logging
+      console.log('Scroll Debug:', {
+        rectTop: rect.top,
+        rectBottom: rect.bottom,
+        rectHeight: rect.height,
+        windowHeight: windowHeight,
+        isInView: rect.top <= 0 && rect.bottom >= windowHeight
+      })
+
       // Calculate scroll progress through the section
       if (rect.top <= 0 && rect.bottom >= windowHeight) {
         const progress = Math.abs(rect.top) / (rect.height - windowHeight)
         const clampedProgress = Math.min(1, Math.max(0, progress))
+        setScrollProgress(clampedProgress)
 
         // Snap points for each word and video
         const snapPoints = [0, 0.188, 0.375, 0.563, 0.75, 1]
@@ -41,9 +52,11 @@ export default function Video() {
         lastSnappedRef.current = smoothed
         setSnappedProgress(smoothed)
       } else if (rect.top > 0) {
+        setScrollProgress(0)
         setSnappedProgress(0)
         lastSnappedRef.current = 0
       } else {
+        setScrollProgress(1)
         setSnappedProgress(1)
         lastSnappedRef.current = 1
       }
@@ -206,6 +219,12 @@ export default function Video() {
 
   return (
     <section ref={sectionRef} className="relative" style={{ height: '400vh' }}>
+      {/* Debug Info */}
+      <div className="fixed top-4 left-4 bg-black/80 text-white p-2 rounded z-50 text-xs">
+        <div>Progress: {(snappedProgress * 100).toFixed(1)}%</div>
+        <div>Raw: {(scrollProgress * 100).toFixed(1)}%</div>
+      </div>
+
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-white">
 
@@ -217,7 +236,7 @@ export default function Video() {
               className="absolute left-1/2 top-1/2"
               style={getTextStyle(index)}
             >
-              <h2 className="text-[8rem] md:text-[11rem] lg:text-[14rem] font-light text-[#1a1a1a] leading-none tracking-tight whitespace-nowrap"
+              <h2 className="text-[4rem] sm:text-[6rem] md:text-[11rem] lg:text-[14rem] font-light text-[#1a1a1a] leading-none tracking-tight whitespace-nowrap"
                 style={{
                   fontFamily: '-apple-system, BlinkMacSystemFont, "SF Pro Display", "Inter", sans-serif',
                   fontWeight: 200,
