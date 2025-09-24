@@ -1,19 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Redirect www to non-www
+  // Redirect settings
   async redirects() {
     return [
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'www.klaimly.de',
-          },
-        ],
-        destination: 'https://klaimly.de/:path*',
-        permanent: true,
-      },
       // Redirect index.html to /
       {
         source: '/index.html',
@@ -40,12 +29,6 @@ const nextConfig = {
   // Performance optimizations
   compress: true,
   poweredByHeader: false,
-
-  // Enable SWC minification
-  swcMinify: true,
-
-  // Optimize font loading
-  optimizeFonts: true,
 }
 
 module.exports = nextConfig
