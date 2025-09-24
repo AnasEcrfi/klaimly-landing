@@ -15,15 +15,6 @@ export default function Video() {
       const rect = sectionRef.current.getBoundingClientRect()
       const windowHeight = window.innerHeight
 
-      // Debug logging
-      console.log('Scroll Debug:', {
-        rectTop: rect.top,
-        rectBottom: rect.bottom,
-        rectHeight: rect.height,
-        windowHeight: windowHeight,
-        isInView: rect.top <= 0 && rect.bottom >= windowHeight
-      })
-
       // Calculate scroll progress through the section
       if (rect.top <= 0 && rect.bottom >= windowHeight) {
         const progress = Math.abs(rect.top) / (rect.height - windowHeight)
@@ -219,12 +210,6 @@ export default function Video() {
 
   return (
     <section ref={sectionRef} className="relative" style={{ height: '400vh' }}>
-      {/* Debug Info */}
-      <div className="fixed top-4 left-4 bg-black/80 text-white p-2 rounded z-50 text-xs">
-        <div>Progress: {(snappedProgress * 100).toFixed(1)}%</div>
-        <div>Raw: {(scrollProgress * 100).toFixed(1)}%</div>
-      </div>
-
       {/* Sticky Container */}
       <div className="sticky top-0 h-screen w-full overflow-hidden bg-white">
 
