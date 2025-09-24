@@ -75,15 +75,15 @@ export default function ServicesTab() {
   ]
 
   return (
-    <section id="process" className="py-20 md:py-28 bg-[#f5f5f7]">
-      <div className="max-w-7xl mx-auto px-8">
+    <section id="process" className="py-16 sm:py-20 md:py-28 bg-[#f5f5f7]">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
         {/* Header */}
         <div className="text-center mb-8">
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-light leading-[1.1] text-[#1a1a1a] mb-6 sm:mb-8">
             Ihr Weg zur Forschungszulage
           </h2>
-          <p className="text-sm text-[#666] max-w-2xl mx-auto leading-relaxed">
+          <p className="text-sm text-[#666] max-w-2xl mx-auto leading-relaxed px-2 sm:px-0">
             Die Beantragung von Fördermitteln erfordert strukturiertes Vorgehen.
             Wir begleiten Sie durch alle Phasen – von der Analyse bis zur Auszahlung.
             Für Unternehmensverbünde optimieren wir den gesamtbetrieblichen Prozess
@@ -93,23 +93,43 @@ export default function ServicesTab() {
 
         {/* Tabs Container */}
         <div>
-          {/* Tab Navigation */}
-          <div className="flex justify-center mb-8">
-            <div className="inline-flex bg-white/60 backdrop-blur rounded-full p-1">
+          {/* Tab Navigation - Mobile Grid */}
+          <div className="mb-8">
+            {/* Mobile: Grid Layout */}
+            <div className="grid grid-cols-2 gap-2 sm:hidden">
               {services.map((service, index) => (
                 <button
                   key={index}
                   onClick={() => setActiveTab(index)}
-                  onMouseEnter={() => setActiveTab(index)}
-                  className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                  className={`px-3 py-3 rounded-lg text-xs font-medium transition-all duration-300 ${
                     activeTab === index
                       ? 'bg-gradient-to-r from-[#7A866C] to-[#869271] text-white shadow-sm'
-                      : 'text-[#666] hover:text-[#7A866C]'
+                      : 'bg-white/60 text-[#666] border border-gray-200'
                   }`}
                 >
                   {service.title}
                 </button>
               ))}
+            </div>
+
+            {/* Desktop: Horizontal Pills */}
+            <div className="hidden sm:flex justify-center">
+              <div className="inline-flex bg-white/60 backdrop-blur rounded-full p-1">
+                {services.map((service, index) => (
+                  <button
+                    key={index}
+                    onClick={() => setActiveTab(index)}
+                    onMouseEnter={() => setActiveTab(index)}
+                    className={`px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 ${
+                      activeTab === index
+                        ? 'bg-gradient-to-r from-[#7A866C] to-[#869271] text-white shadow-sm'
+                        : 'text-[#666] hover:text-[#7A866C]'
+                    }`}
+                  >
+                    {service.title}
+                  </button>
+                ))}
+              </div>
             </div>
           </div>
 
